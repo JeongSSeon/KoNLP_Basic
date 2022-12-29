@@ -1,4 +1,4 @@
-# 5-1 speech_park.txt를 불러와 분석에 적합하게 전처리한 다음 연설문에서 명사 추출.
+# 5-1 speech_park.txt를 불러와 분석에 적합하게 전처리한 다음 연설문에서 명사 추출
 setwd('C:/Users/jspar/OneDrive/Documents/학교/전공/텍마')
 library(tidyr)
 library(tidytext)
@@ -21,7 +21,7 @@ noun_token <- speech %>%
 noun_token
 
 
-# 5-2 가장 자주 사용된 단어 20개 추출.
+# 5-2 가장 자주 사용된 단어 20개 추출
 word_count <- speech %>%
   unnest_tokens(input = value,
                 output= word,
